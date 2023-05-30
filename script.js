@@ -7,7 +7,6 @@ const imagens = document.getElementById('imagens')
 const titulo = document.getElementById('h1')
 const subtitulo = document.getElementById('h2')
 
-
 function definirCorDeFundo(){
     if(horasAtual >= 6 && horasAtual <= 12){
         corpo.style.backgroundColor = '#F8E182'
@@ -22,7 +21,13 @@ function definirCorDeFundo(){
         titulo.innerText = 'Tarde'
         subtitulo.innerText = (`${horasAtual}:${minutosAtual}`)
     }
-    else if(horasAtual >= 19 && horasAtual <= 24){
+    else if(horasAtual >= 19 && horasAtual <= 5){
+        corpo.style.background = '#193D4B'
+        imagens.src = 'Imagens/noite.png'
+        titulo.innerText = 'Noite'
+        subtitulo.innerText = (`${horasAtual}:${minutosAtual}`)
+    }
+    else{
         corpo.style.background = '#193D4B'
         imagens.src = 'Imagens/noite.png'
         titulo.innerText = 'Noite'
