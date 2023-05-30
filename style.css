@@ -1,0 +1,29 @@
+body{
+    background-color: cadetblue;
+    font: normal 15pt Arial;
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+section{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.726);
+}
+
+div > img{
+    width: 450px;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
